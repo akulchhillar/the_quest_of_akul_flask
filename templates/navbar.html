@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/papercss@1.8.3/dist/paper.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/sharing_buttons_style.css') }}">
+
+    <!-- Primary Meta Tags -->
+<title>The Quest Of Akul</title>
+<meta name="title" id="m1" content="The Quest Of Akul">
+<meta name="description" content="Hi there, I am Akul Chhillar and this is my personal blog, where I blog about things that generate curiosity, and the topic ranges from technology to productivity.">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" id="og_web" content="">
+<meta property="og:title" id="m2" content="The Quest Of Akul">
+<meta property="og:description" content="Hi there, I am Akul Chhillar and this is my personal blog, where I blog about things that generate curiosity, and the topic ranges from technology to productivity.">
+<meta property="og:image" id="og_image" content="https://raw.githubusercontent.com/akulchhillar/the_quest_of_akul/main/assests/Moonlit%20Asteroid.jpg">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" id ="t_web" content="">
+<meta property="twitter:title" id="m3" content="The Quest Of Akul">
+<meta property="twitter:description" content="Hi there, I am Akul Chhillar and this is my personal blog, where I blog about things that generate curiosity, and the topic ranges from technology to productivity.">
+<meta property="twitter:image" id="t_image"" content="https://raw.githubusercontent.com/akulchhillar/the_quest_of_akul/main/assests/Moonlit%20Asteroid.jpg">
+
+<link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='/favicon/apple-touch-icon.png') }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='/favicon/favicon-32x32.png') }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='/favicon/favicon-16x16.png') }}">
+<link rel="manifest" href="/site.webmanifest">
+    <title>The Quest Of Akul</title>
+    <!-- MailerLite Universal -->
+<script>
+    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+    ml('account', '199383');
+</script>
+<!-- End MailerLite Universal -->
+</head>
+<body>
+   <!-- Navbar -->
+
+    <nav class="border split-nav">
+        <div class="nav-brand">
+            <h3><a href="/">The Quest Of Akul</a></h3>
+        </div>
+        
+        <div class="collapsible">
+            <input id="collapsible1" type="checkbox" name="collapsible1">
+            <label for="collapsible1">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            </label>
+            <div class="collapsible-body">
+            <ul class="inline">
+                <li><a href="https://github.com/akulchhillar" target="_blank">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/akulchhillar/" target="_blank">Linkedin</a></li>
+                <li><a href="https://www.akulchhillar.com/" target="_blank">Website</a></li>
+                <li><a href="/about">About Me</a></li>
+            </ul>
+            </div>
+        </div>
+        
+    </nav>
+
+        <!-- Navbar -->
+
+        <div class="row">
+            <div class="col-2 col"></div>
+            <div class="col-8 col">
+{% block content %} {% endblock %}
