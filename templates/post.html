@@ -52,7 +52,7 @@
 
           let twitter_sharing = document.getElementById("t_sh")
           let t_url = encodeURIComponent(url.trim())
-          let twitter_sharing_url = `https://twitter.com/intent/tweet/?text=${heading}${t_url}`
+          let twitter_sharing_url = `https://twitter.com/intent/tweet/?text=${heading} \n ${t_url}`
           twitter_sharing.setAttribute("href",twitter_sharing_url)
 
           let og_image = document.getElementById("og_image")
